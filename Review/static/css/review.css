@@ -287,6 +287,7 @@ input[type=submit] {
 	padding:6px;
 	border-radius: 0 0 6px 6px;
 	margin: 0 200px;
+	min-width: 500px;
 }
 
 .review_evaluation {
@@ -294,6 +295,32 @@ input[type=submit] {
 	font-size:13px;
 	cursor:pointer;
 	padding:1px 1em 1px 1em;
+}
+
+@media (max-width: 800px) {
+	.review_evaluation_drawer {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.review_evaluation_container {
+		float: none;
+	}
+	.review_evaluation_text {
+		float: none;
+	}
+	.review_evaluation_drawer {
+		min-width: 395px;
+	}
+}
+
+@media (max-width: 520px) {
+	.review_evaluation {
+		padding-left: 1px;
+		padding-right: 1px;
+	}
 }
 
 .lb-download {
